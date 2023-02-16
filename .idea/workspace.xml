@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pooII.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/teoria/introduccion/Ejemplo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/teoria/introduccion/EstaticoInstancia.java" afterDir="false" />
+    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Inciio de repositorio">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +46,18 @@
       <option name="presentableId" value="Default" />
       <updated>1676380839803</updated>
     </task>
+    <task id="LOCAL-00001" summary="Inciio de repositorio">
+      <created>1676545362066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676545362066</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Inciio de repositorio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inciio de repositorio" />
   </component>
 </project>
