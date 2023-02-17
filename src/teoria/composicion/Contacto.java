@@ -58,12 +58,12 @@ public class Contacto {
                 fechaNacimiento.getDayOfMonth(), fechaNacimiento.getMonthValue() );
     }
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         String nombre = "Gabriel";
         String apellidos = "García Méndez";
         String telefono = "953222324";
         LocalDate fecha = LocalDate.of(2000, 3, 21);
         Contacto contacto = new Contacto(nombre, apellidos, telefono, fecha);
         System.out.println(contacto);
-    }
+    }*/
 }

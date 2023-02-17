@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Inciio de repositorio">
+    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Composición, ejemplo agenda">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/librerias.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datos/contactos.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/librerias/librerias.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pooII.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pooII.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/manuel/curso_22_23/pooII/datos",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/datos" />
+      <recent name="$PROJECT_DIR$/librerias" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,11 +70,26 @@
       <option name="project" value="LOCAL" />
       <updated>1676545362066</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Inciio de repositorio">
+      <created>1676551682476</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676551682476</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Composición, ejemplo agenda">
+      <created>1676551718833</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676551718833</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inciio de repositorio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inciio de repositorio" />
+    <MESSAGE value="Composición, ejemplo agenda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Composición, ejemplo agenda" />
   </component>
 </project>
