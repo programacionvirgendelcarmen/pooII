@@ -1,35 +1,39 @@
 package teoria.composicion;
 
+import dates.DateHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Agenda {
-    private String nombreAgenda;
+    private NombreAgenda nombreAgenda;
     List<Contacto> contactos;
 
-    public Agenda(String nombreAgenda, List<Contacto> contactos) {
-        this.nombreAgenda = nombreAgenda; //importo contacto
+    public Agenda(NombreAgenda nombreAgenda, List<Contacto> contactos) {
+        this.nombreAgenda = nombreAgenda;
         this.contactos = contactos;
     }
 
-    public Agenda(String nombreAgenda) {
+    public Agenda(NombreAgenda nombreAgenda) {
         this.nombreAgenda = nombreAgenda;
-        contactos = new ArrayList<>();  //agenda vacía
+        contactos = new ArrayList<>();
     }
-
     //getters y setters
 
-    public String getNombreAgenda() {
+
+    public NombreAgenda getNombreAgenda() {
         return nombreAgenda;
+    }
+
+    public void setNombreAgenda(NombreAgenda nombreAgenda) {
+        this.nombreAgenda = nombreAgenda;
     }
 
     public List<Contacto> getContactos() {
         return contactos;
     }
 
-    public void setNombreAgenda(String nombreAgenda) {
-        this.nombreAgenda = nombreAgenda;
-    }
+
     //método que añada un contacto
     public boolean addContacto(Contacto contacto){
         return contactos.add(contacto);
@@ -55,5 +59,13 @@ public class Agenda {
         }
         return null;
     }
-    //método que devuelva una lista de objetos
+    //método que devuelva una lista de objetos que sean contactos mayores de edad
+    public List<Contacto> getContactosMayoresEdad() {
+        List<Contacto> mayoresEdad = new ArrayList<>();
+        for (Contacto contacto : contactos) {
+            if (DateHelper.calcularEdad(contacto.getFechaNacimiento()) * -1 >= 18)
+                mayoresEdad.add(contacto);
+        }
+        return mayoresEdad;
+    }
 }

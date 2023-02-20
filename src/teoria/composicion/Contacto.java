@@ -1,5 +1,7 @@
 package teoria.composicion;
 
+import dates.DateHelper;
+
 import java.time.LocalDate;
 
 public class Contacto {
@@ -53,9 +55,10 @@ public class Contacto {
 
     @Override
     public String toString() {
-        return String.format("NOBRE: %s, %s%nTELF: %s%nCUMPLEAÑOS: %d del %d",
+        return String.format("NOBRE: %s, %s%nTELF: %s%nCUMPLEAÑOS: %d del %d%nEDAD %d",
                 apellidos, nombreContacto, telefono,
-                fechaNacimiento.getDayOfMonth(), fechaNacimiento.getMonthValue() );
+                fechaNacimiento.getDayOfMonth(), fechaNacimiento.getMonthValue(),
+                DateHelper.calcularEdad(fechaNacimiento) * -1);
     }
 
    /* public static void main(String[] args) {

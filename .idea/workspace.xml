@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Composición, ejemplo agenda">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/librerias.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datos/contactos.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/librerias/librerias.jar" afterDir="false" />
+    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Composición, ejemplo agenda, completar TestAgenda">
+      <change afterPath="$PROJECT_DIR$/src/teoria/composicion/NombreAgenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/teoria/composicion/PruebaGrafica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pooII.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pooII.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" afterDir="false" />
@@ -22,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -38,16 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/manuel/curso_22_23/pooII/datos",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/manuel/curso_22_23/pooII/datos&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/datos" />
@@ -84,12 +83,20 @@
       <option name="project" value="LOCAL" />
       <updated>1676551718833</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Composición, ejemplo agenda, completar TestAgenda">
+      <created>1676645055549</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676645055549</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inciio de repositorio" />
     <MESSAGE value="Composición, ejemplo agenda" />
-    <option name="LAST_COMMIT_MESSAGE" value="Composición, ejemplo agenda" />
+    <MESSAGE value="Composición, ejemplo agenda, completar TestAgenda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Composición, ejemplo agenda, completar TestAgenda" />
   </component>
 </project>
