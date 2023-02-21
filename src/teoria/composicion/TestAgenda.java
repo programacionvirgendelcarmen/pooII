@@ -1,5 +1,6 @@
 package teoria.composicion;
 
+import dates.DateHelper;
 import strings.StringHelper;
 
 import javax.swing.*;
@@ -51,33 +52,66 @@ public class TestAgenda {
     }
 
     private static void desplegarMenu() {
+        String mensaje = "Introduce una opción" +
+                "\n1. Añadir contacto." +
+                "\n2. Mostrar contacto" +
+                "\n3. Mostrar todos los contacto" +
+                "\n4. Mostrar mayores de edad" +
+                "\n5. Actualizar contacto" +
+                "\n6. Salir";
         String opcion = "";
         do {
-            opcion =
-                    JOptionPane.showInputDialog(
-                            "Introduce una opción\n1. Añadir contacto.\n2. Mostrar contacto\n3. Salir");
-        } while (! opcion.matches("[12]"));
-        //System.out.println("opción elegida " + opcion);
-        switch (opcion) {
-            case "1" :
-                addContacto();
-                break;
-            case "2" :
-                mostrarContactoPorTelefono();
-                break;
-            default:
-                break;
+            do {
+                opcion =
+                        JOptionPane.showInputDialog(mensaje);
+            } while (!opcion.matches("[1-6]"));
+            //System.out.println("opción elegida " + opcion);
+            switch (opcion) {
+                case "1":
+                    addContacto();
+                    break;
+                case "2":
+                    mostrarContactoPorTelefono();
+                    break;
+                case  "3":
+                    mostrarTodosLosContactos();
+                    break;
+                case "4":
+                    mostrarMayoresEdad();
+                    break;
+                case "5":
+                    actualizarUnContacto();
+                    break;
+                case "6":
+                    JOptionPane.showMessageDialog(
+                            null, "Fin de programa", "CONTACTO",
+                            JOptionPane.INFORMATION_MESSAGE);
+                    break;
+                default:
+                    break;
+            }
+        } while (! opcion.equals("4"));
+    }
+
+    private static void actualizarUnContacto() {
+        Contacto newContacto = getContacto();
+        Contacto oldContacto = getContactoByPhone();
+        agenda.actualizarContacto(oldContacto, newContacto);
+
+    }
+
+    private static void mostrarMayoresEdad() {
+        //lógica similar a mostarTodosLosContactos()
+    }
+
+    private static void mostrarTodosLosContactos() {
+        for (Contacto contacto : agenda.getContactos()) {
+            System.out.println(contacto);
         }
     }
 
     private static void mostrarContactoPorTelefono() {
-        String telefono = "";
-        do {
-            telefono =
-                    JOptionPane.showInputDialog(
-                            "Introduce nº teléfono del contacto a localizar");
-        } while (!StringHelper.checkPhoneNumber(telefono));
-        Contacto contacto = agenda.mostrarContacto(telefono);
+        Contacto contacto = getContactoByPhone();
         if (contacto != null)
             JOptionPane.showMessageDialog(
                     null, contacto, "CONTACTO",
@@ -88,7 +122,45 @@ public class TestAgenda {
                     JOptionPane.ERROR_MESSAGE);
     }
 
+    private static Contacto getContactoByPhone() {
+        String telefono = "";
+        do {
+            telefono =
+                    JOptionPane.showInputDialog(
+                            "Introduce nº teléfono del contacto a localizar");
+        } while (!StringHelper.checkPhoneNumber(telefono));
+        Contacto contacto = agenda.mostrarContacto(telefono);
+        return contacto;
+    }
+
     private static void addContacto() {
-        agenda.mostrarContacto("telefono");
+        Contacto contacto = getContacto();
+        if (agenda.addContacto(contacto))
+            JOptionPane.showMessageDialog(
+                    null, "Añadido contacto nuevo", "NUEVO CONTACTO",
+                    JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private static Contacto getContacto() {
+        String nombre = JOptionPane.showInputDialog("Introduce nombre de contacto");
+        String apellidos = JOptionPane.showInputDialog("Introduce apellidos de contacto");
+        String telefono = "";
+        do {
+            telefono = JOptionPane.showInputDialog("Introduce un télefono válido");
+        } while (!StringHelper.checkPhoneNumber(telefono));
+        String sFecha = "";
+        do {
+            sFecha = JOptionPane.showInputDialog("Introduce fecha nacimiento");
+        } while (!DateHelper.checkDate(sFecha));
+        String[] tokens = sFecha.split("[-/]");
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(tokens[2]); //año
+        stringBuilder.append('-');
+        stringBuilder.append(tokens[1]); //mes
+        stringBuilder.append('-');
+        stringBuilder.append(tokens[0]); //día
+        LocalDate fecha = LocalDate.parse(stringBuilder.toString());
+        Contacto contacto = new Contacto(nombre, apellidos, telefono, fecha);
+        return contacto;
     }
 }

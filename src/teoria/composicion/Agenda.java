@@ -63,7 +63,7 @@ public class Agenda {
     public List<Contacto> getContactosMayoresEdad() {
         List<Contacto> mayoresEdad = new ArrayList<>();
         for (Contacto contacto : contactos) {
-            if (DateHelper.calcularEdad(contacto.getFechaNacimiento()) * -1 >= 18)
+            if (DateHelper.calcularEdad(contacto.getFechaNacimiento())  >= 18)
                 mayoresEdad.add(contacto);
         }
         return mayoresEdad;

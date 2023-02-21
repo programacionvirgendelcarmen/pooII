@@ -58,7 +58,7 @@ public class Contacto {
         return String.format("NOBRE: %s, %s%nTELF: %s%nCUMPLEAÑOS: %d del %d%nEDAD %d",
                 apellidos, nombreContacto, telefono,
                 fechaNacimiento.getDayOfMonth(), fechaNacimiento.getMonthValue(),
-                DateHelper.calcularEdad(fechaNacimiento) * -1);
+                DateHelper.calcularEdad(fechaNacimiento));
     }
 
    /* public static void main(String[] args) {
