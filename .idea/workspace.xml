@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Composición, ejemplo agenda, completar TestAgenda">
-      <change afterPath="$PROJECT_DIR$/src/teoria/composicion/NombreAgenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/teoria/composicion/PruebaGrafica.java" afterDir="false" />
+    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +26,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LjO5AZjGp6jZmYGPntMjFp6KSR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -90,13 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676645055549</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane">
+      <created>1676904232200</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676904232200</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inciio de repositorio" />
     <MESSAGE value="Composición, ejemplo agenda" />
     <MESSAGE value="Composición, ejemplo agenda, completar TestAgenda" />
-    <option name="LAST_COMMIT_MESSAGE" value="Composición, ejemplo agenda, completar TestAgenda" />
+    <MESSAGE value="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane" />
+    <option name="LAST_COMMIT_MESSAGE" value="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane" />
   </component>
 </project>
