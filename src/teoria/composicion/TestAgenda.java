@@ -90,18 +90,29 @@ public class TestAgenda {
                 default:
                     break;
             }
-        } while (! opcion.equals("4"));
+        } while (! opcion.equals("6"));
     }
 
     private static void actualizarUnContacto() {
         Contacto newContacto = getContacto();
         Contacto oldContacto = getContactoByPhone();
-        agenda.actualizarContacto(oldContacto, newContacto);
+        boolean exito = agenda.actualizarContacto(oldContacto, newContacto);
+        if (exito)
+            JOptionPane.showMessageDialog(
+                    null, "Actualizado contacto", "CONTACTO",
+                    JOptionPane.INFORMATION_MESSAGE);
+        else
+            JOptionPane.showMessageDialog(
+                    null, "No existe el contacto", "CONTACTO",
+                    JOptionPane.ERROR_MESSAGE);
 
     }
 
     private static void mostrarMayoresEdad() {
         //lógica similar a mostarTodosLosContactos()
+        for (Contacto contacto : agenda.getContactosMayoresEdad()) {
+            System.out.println(contacto);
+        }
     }
 
     private static void mostrarTodosLosContactos() {

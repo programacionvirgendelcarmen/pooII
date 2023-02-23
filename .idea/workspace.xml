@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane">
+    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane, falta un método y refactorizar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librerias/librerias.jar" beforeDir="false" afterPath="$PROJECT_DIR$/librerias/librerias.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676985603423</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane, falta un método y refactorizar">
+      <created>1676990517870</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676990517870</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -114,6 +119,7 @@
     <MESSAGE value="Composición, ejemplo agenda" />
     <MESSAGE value="Composición, ejemplo agenda, completar TestAgenda" />
     <MESSAGE value="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane" />
-    <option name="LAST_COMMIT_MESSAGE" value="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane" />
+    <MESSAGE value="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane, falta un método y refactorizar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane, falta un método y refactorizar" />
   </component>
 </project>

@@ -2,12 +2,13 @@ package teoria.composicion;
 
 import dates.DateHelper;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Agenda {
     private NombreAgenda nombreAgenda;
-    List<Contacto> contactos;
+    private List<Contacto> contactos;
 
     public Agenda(NombreAgenda nombreAgenda, List<Contacto> contactos) {
         this.nombreAgenda = nombreAgenda;
@@ -44,10 +45,20 @@ public class Agenda {
     }
     //método que actualice un contacto
     public boolean actualizarContacto(Contacto oldContacto, Contacto newContacto){
-        for (Contacto contacto: contactos) {
-            if (oldContacto.equals(contacto))
-                contacto = newContacto;
-            return true;
+        if (oldContacto == null)
+            return false;
+        System.out.println(oldContacto);
+        for (int i = 0; i < contactos.size(); i++) {
+            if (contactos.get(i).getTelefono().equals(oldContacto.getTelefono())) {
+                System.out.println(contactos.get(i));
+                contactos.get(i).setNombreContacto(newContacto.getNombreContacto());
+                contactos.get(i).setApellidos(newContacto.getApellidos());
+                contactos.get(i).setTelefono(newContacto.getTelefono());
+                contactos.get(i).setFechaNacimiento(newContacto.getFechaNacimiento());
+                System.out.println(contactos.get(i));
+                return true;
+            }
+
         }
         return false;
     }
