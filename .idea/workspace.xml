@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane, falta un método y refactorizar">
+    <list default="true" id="55f83e5b-e540-42e3-bbdf-bb42d1b1ec1a" name="Changes" comment="Composición, fin de teoría">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicios/AulaInformatica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicios/Ordenador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicios/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ejercicios/TipoPlaca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Agenda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/TestAgenda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teoria/composicion/Contacto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676990517870</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Composición, fin de teoría">
+      <created>1677150498483</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677150498483</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -120,6 +131,7 @@
     <MESSAGE value="Composición, ejemplo agenda, completar TestAgenda" />
     <MESSAGE value="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane" />
     <MESSAGE value="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane, falta un método y refactorizar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Composición, ejemplo agenda, completar TestAgenda, enum, JOptionPane, falta un método y refactorizar" />
+    <MESSAGE value="Composición, fin de teoría" />
+    <option name="LAST_COMMIT_MESSAGE" value="Composición, fin de teoría" />
   </component>
 </project>

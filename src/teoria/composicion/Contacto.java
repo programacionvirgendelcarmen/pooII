@@ -3,6 +3,7 @@ package teoria.composicion;
 import dates.DateHelper;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Contacto {
     //nombre, apellidos, .teléfono, edad
@@ -61,7 +62,20 @@ public class Contacto {
                 DateHelper.calcularEdad(fechaNacimiento));
     }
 
-   /* public static void main(String[] args) {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Contacto contacto = (Contacto) o;
+        return telefono.equals(contacto.telefono);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(telefono);
+    }
+
+    /* public static void main(String[] args) {
         String nombre = "Gabriel";
         String apellidos = "García Méndez";
         String telefono = "953222324";
